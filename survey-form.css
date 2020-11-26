@@ -3,3 +3,34 @@ main {
   font-size: 10;
   line-height: 1.5;
 }
+
+div {
+  margin: 15px 0px;
+}
+
+fieldset {
+  margin: 15px 0px;
+}
+.subtext {
+  font-size: 0.75rem;
+  line-height: 0;
+}
+
+.grid-item {
+  justify-self: grid-start;
+}
+
+#pet-type-checkbox {
+  display: grid;
+  width: 25%;
+  min-width: 400px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#pet-purchase-radio {
+  display: flex;
+  justify-content: space-around;
+  min-width: 400px;
+  width: 25%;
+  flex-wrap: wrap;
+}
