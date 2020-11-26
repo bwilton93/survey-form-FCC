@@ -17,7 +17,7 @@ fieldset {
 }
 
 .grid-item {
-  justify-self: grid-start;
+  justify-self: center;
 }
 
 #pet-type-checkbox {
@@ -25,12 +25,14 @@ fieldset {
   width: 25%;
   min-width: 400px;
   grid-template-columns: repeat(3, 1fr);
+  padding: 0 1%;
 }
 
 #pet-purchase-radio {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   min-width: 400px;
   width: 25%;
   flex-wrap: wrap;
+  padding: 0 1%;
 }
