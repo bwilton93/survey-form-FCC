@@ -4,39 +4,59 @@
     <p id="description">This is descriptive text</p>
   </div>
   <form id="survey-form">
-    <label for="name" id="name-label">What is your name?</label>
-    <input id="name" type="text" placeholder="John Doe">
-    <label for="email" id="email-label">What is your email?</label>
-    <input id="email" type="email" placeholder="johndoe@email.com">
-    <label for="number" id="number-label">How old are you?</label>
-    <input id="number" type="number" placeholder="Input Age">
-    <label for="dropdown" id="dropdown-label">How many pets do you have?</label>
-    <select id="dropdown" placeholder="0">
-        <option value="0">0</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5+">5+</option>
-    </select>
-    <fieldset>
-      <legend>What type of pet(s) do you own? <p class="subtext"><em>Tick all that apply</em></p></legend>
-      <input type="checkbox" id="cat" name="pet-type" value="cat">
-      <label for="cat">cat</label>
-      <input type="checkbox" id="dog" name="pet-type" value="dog">
-      <label for="dog">dog</label>
-      <input type="checkbox" id="snake" name="pet-type" value="snake">
-      <label for="snake">snake</label>
+    <div>
+      <label for="name" id="name-label">What is your name?</label>
+      <input id="name" type="text" placeholder="John Doe">
+    </div>
+    <div>
+      <label for="email" id="email-label">What is your email?</label>
+      <input id="email" type="email" placeholder="johndoe@email.com">
+    </div>
+    <div>
+      <label for="number" id="number-label">How old are you?</label>
+      <input id="number" type="number" placeholder="Input Age">
+    </div>
+    <div>
+      <label for="dropdown" id="dropdown-label">How many pets do you have?</label>
+      <select id="dropdown" placeholder="0">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5+">5+</option>
+      </select>
+    </div>
+    <fieldset id="pet-type-checkbox">
+      <legend>What type of pet(s) do you own? <span class="subtext"><em>Tick all that apply</em></span></legend>
+      <div class="grid-item">
+        <input type="checkbox" id="cat" name="pet-type" value="cat">
+        <label for="cat">cat</label>
+      </div>
+      <div class="grid-item">
+        <input type="checkbox" id="dog" name="pet-type" value="dog">
+        <label for="dog">dog</label>
+      </div>
+      <div class="grid-item">
+        <input type="checkbox" id="snake" name="pet-type" value="snake">
+        <label for="snake">snake</label>
+      </div>
     </fieldset>
-    <fieldset>
-      <legend>How likely are you to purchase a new pet? <p class="subtext"><em>Tick one</em></p></legend>
-      <input type="radio" id="unlikely" name="new-pet-radio" value="-1">
-      <label for="unlikely">Unlikely</label>
-      <input type="radio" id="undecided" name="new-pet-radio" value="0" checked>
-      <label for="undecided">Undecided</label>
-      <input type="radio" id="likely" name="new-pet-radio" value="1">
-      <label for="likely">Likely</label>
-      <input id="submit" type="submit" value="submit">
+    <fieldset id="pet-purchase-radio">
+      <legend>How likely are you to purchase a new pet? <span class="subtext"><em>Tick one</em></span></legend>
+      <div>
+        <input type="radio" id="unlikely" name="new-pet-radio" value="-1">
+        <label for="unlikely">Unlikely</label>
+      </div>
+      <div>
+        <input type="radio" id="undecided" name="new-pet-radio" value="0" checked>
+        <label for="undecided">Undecided</label>
+      </div>
+      <div>
+        <input type="radio" id="likely" name="new-pet-radio" value="1">
+        <label for="likely">Likely</label>
+      </div>
     </fieldset>
+    <input id="submit" type="submit" value="submit">
   </form>
 </main>
