@@ -19,22 +19,24 @@
         <option value="4">4</option>
         <option value="5+">5+</option>
     </select>
-    <legend>What type of pet(s) do you own?</legend>
-    <legend id="question-descriptor">Tick all that apply</legend>
-    <input type="checkbox" id="cat" name="pet-type" value="cat">
-    <label for="cat">cat</label>
-    <input type="checkbox" id="dog" name="pet-type" value="dog">
-    <label for="dog">dog</label>
-    <input type="checkbox" id="snake" name="pet-type" value="snake">
-    <label for="snake">snake</label>
-    <legend>How likely are you to purchase a new pet?</legend>
-    <legend id="question-descriptor">Tick one</legend>
-    <input type="radio" id="unlikely" name="new-pet-radio" value="-1">
-    <label for="unlikely">Unlikely</label>
-    <input type="radio" id="undecided" name="new-pet-radio" value="0" checked>
-    <label for="undecided">Undecided</label>
-    <input type="radio" id="likely" name="new-pet-radio" value="1">
-    <label for="likely">Likely</label>
-    <input id="submit" type="submit" value="submit">
+    <fieldset>
+      <legend>What type of pet(s) do you own? <p class="subtext"><em>Tick all that apply</em></p></legend>
+      <input type="checkbox" id="cat" name="pet-type" value="cat">
+      <label for="cat">cat</label>
+      <input type="checkbox" id="dog" name="pet-type" value="dog">
+      <label for="dog">dog</label>
+      <input type="checkbox" id="snake" name="pet-type" value="snake">
+      <label for="snake">snake</label>
+    </fieldset>
+    <fieldset>
+      <legend>How likely are you to purchase a new pet? <p class="subtext"><em>Tick one</em></p></legend>
+      <input type="radio" id="unlikely" name="new-pet-radio" value="-1">
+      <label for="unlikely">Unlikely</label>
+      <input type="radio" id="undecided" name="new-pet-radio" value="0" checked>
+      <label for="undecided">Undecided</label>
+      <input type="radio" id="likely" name="new-pet-radio" value="1">
+      <label for="likely">Likely</label>
+      <input id="submit" type="submit" value="submit">
+    </fieldset>
   </form>
 </main>
