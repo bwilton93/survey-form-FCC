@@ -1,20 +1,20 @@
 <main>
   <div id="title-block">
-    <h1 id="title">This is a title</h1>
-    <p id="description">This is descriptive text</p>
+    <h1 id="title">Pet Ownership Survey</h1>
+    <p id="description">This is a survey all about pet ownership and if you are considering getting any new pets</p>
   </div>
   <form id="survey-form">
     <div>
       <label for="name" id="name-label">What is your name?</label>
-      <input id="name" type="text" placeholder="John Doe">
+      <input id="name" type="text" placeholder="John Doe" required>
     </div>
     <div>
       <label for="email" id="email-label">What is your email?</label>
-      <input id="email" type="email" placeholder="johndoe@email.com">
+      <input id="email" type="email" placeholder="johndoe@email.com" required>
     </div>
     <div>
       <label for="number" id="number-label">How old are you?</label>
-      <input id="number" type="number" placeholder="Input Age">
+      <input id="number" type="number" placeholder="Input Age" min="13" max="100">
     </div>
     <div>
       <label for="dropdown" id="dropdown-label">How many pets do you have?</label>
@@ -56,6 +56,11 @@
         <input type="radio" id="likely" name="new-pet-radio" value="1">
         <label for="likely">Likely</label>
       </div>
+    </fieldset>
+    <fieldset>
+      <legend>Extra Comments</legend>
+      <textarea id="extra-comments" name="extra-comments">
+      </textarea>
     </fieldset>
     <input id="submit" type="submit" value="submit">
   </form>

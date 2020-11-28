@@ -2,6 +2,7 @@ main {
   font-family: sans-serif;
   font-size: 10;
   line-height: 1.5;
+  margin-left: 2%;
 }
 
 div {
@@ -10,6 +11,23 @@ div {
 
 fieldset {
   margin: 15px 0px;
+  width: 25%;
+  min-width: 375px;
+}
+
+p {
+  max-width: 25%;
+  text-align: left;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  box-shadow: 2px 2px 5px 1px;
+}
+
+textarea{
+  width: 100%;
+  min-width: 400px;
+  height: 200px;
 }
 .subtext {
   font-size: 0.75rem;
@@ -22,17 +40,17 @@ fieldset {
 
 #pet-type-checkbox {
   display: grid;
-  width: 25%;
-  min-width: 400px;
+  max-width: 25%;
+  min-width: auto;
   grid-template-columns: repeat(3, 1fr);
   padding: 0 1%;
 }
 
 #pet-purchase-radio {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   min-width: 400px;
   width: 25%;
-  flex-wrap: wrap;
   padding: 0 1%;
+  text-align: center;
 }
